@@ -1,0 +1,11 @@
+{
+  "name": "chat",
+  "version": "0.0.1",
+  "description": "Data Transmission socket application",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "socket.io": "^2.2.0"
+  }
+}

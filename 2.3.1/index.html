@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Vue first app</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="node_modules/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <input class="message" v-model="message" placeholder="Name">
+
+    <div class="output-empty" v-if="message == ''">The message is empty</div>
+    <div class="output-empty" v-if="message == '123'&& secret!=''">The message is 123</div>
+    <div class="output" v-if="message != ''&& secret==''">#  {{ message }} #</div>
+
+
+    <button class="process-button" v-on:click="process()">Process</button>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
